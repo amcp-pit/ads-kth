@@ -148,7 +148,7 @@ jobs:
       - name: Memory leaks
         run: |
              ulimit -v unlimited
-             valgrind --tool=memcheck --leak-check=full --undef-value-errors=no --error-exitcode=111 ./build/kth tests/in/input6.txt output.txt
+             valgrind --tool=memcheck --leak-check=full --undef-value-errors=no --error-exitcode=111 ./build/kth tests/input6.txt output.txt
       - name: Checkout
         uses: actions/checkout@v4
       - name: CPD
